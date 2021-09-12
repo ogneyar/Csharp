@@ -1,1 +1,1 @@
-csc /out:HelloWorld.exe Program.cs
+"C:\Users\Отрад\.vscode\extensions\ms-dotnettools.csharp-1.23.15\.omnisharp\1.37.15\.msbuild\Current\Bin\Roslyn\csc" /out:HelloWorld.exe Program.cs
