@@ -1,0 +1,8 @@
+# This file contains command-line options for C# compiler (CSC).
+# To use this file you need specify its name in CSC command-line like this: csc @filename <other command-line args>
+
+# This specifies the path to referenced assemblies
+/lib:"C:\VSCode\Csharp\TestDll"
+
+# Reference assemblies
+/r:Test.dll

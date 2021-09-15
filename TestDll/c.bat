@@ -1,0 +1,1 @@
+csc @response.rsp /out:Main.exe Main.cs
