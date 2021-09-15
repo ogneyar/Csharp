@@ -45,7 +45,23 @@ namespace test
             {
                 MessageBox.Show(text);
             }
+            else
+            {
+                MessageBox.Show("Необходимо ввести текст!");
+            }
         }
 
     }
+
+    public class Phone
+    {
+        public string Name { get; set; }
+        public int Price { get; set; }
+        
+        public override string ToString()
+        {
+            return $"Смартфон {this.Name} цена: {this.Price}";
+        }
+    }
+
 }

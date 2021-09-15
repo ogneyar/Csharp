@@ -42,3 +42,4 @@ C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.AssemblyInfoInputs.cach
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.AssemblyInfo.cs
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.csproj.CoreCompileInputs.cache
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.genruntimeconfig.cache
+C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs

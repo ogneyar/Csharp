@@ -4,8 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
+          
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="300">
+
+    <Window.Resources>
+        <col:ArrayList x:Key="days">
+            <sys:String>Понедельник</sys:String>
+            <sys:String>Вторник</sys:String>
+            <sys:String>Среда</sys:String>
+            <sys:String>Четверг</sys:String>
+            <sys:String>Пятница</sys:String>
+            <sys:String>Суббота</sys:String>
+            <sys:String>Воскресенье</sys:String>
+        </col:ArrayList> 
+    </Window.Resources>
 
     <Grid x:Name="layoutGrid">
 
@@ -16,6 +32,12 @@
             <TextBlock x:Name="textBlock1" Width="150" Height="30" Margin="5" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
 
             <Button x:Name="button1" Width="100" Height="30" Margin="5" Opacity="0.5" Content="Кнопка" Background="Red" Click="ButtonClick" />
+
+            <Button x:Name="phoneButton" Width="250" Height="40" Margin="5" HorizontalAlignment="Center">
+                <Button.Content>
+                    <local:Phone Name="Lumia 950" Price="700" />
+                </Button.Content>
+            </Button>
 
         </StackPanel>
 
