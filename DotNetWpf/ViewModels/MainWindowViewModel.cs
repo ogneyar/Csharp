@@ -1,4 +1,4 @@
-namespace Ex1.ViewModels
+namespace ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {

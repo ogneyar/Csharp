@@ -7,17 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="300">
 
-    <Grid x:Name="grid1">
+    <Grid x:Name="layoutGrid">
 
-        <StackPanel Orientation="Vertical">
+        <StackPanel x:Name="stackPanel" Orientation="Vertical">
 
-            <TextBox />
-            <TextBlock />
+            <TextBox x:Name="textBox1" Width="150" Height="30" Margin="5" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" VerticalAlignment="Top"/>
 
-            <TextBox Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}"/>
-            <TextBlock Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+            <TextBlock x:Name="textBlock1" Width="150" Height="30" Margin="5" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
 
-            <Button x:Name="button1"  Width="100" Height="30" Content="Кнопка" />
+            <Button x:Name="button1" Width="100" Height="30" Margin="5" Opacity="0.5" Content="Кнопка" Background="Red" Click="ButtonClick" />
 
         </StackPanel>
 
