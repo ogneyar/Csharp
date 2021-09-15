@@ -43,3 +43,5 @@ C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.AssemblyInfo.cs
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.csproj.CoreCompileInputs.cache
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.genruntimeconfig.cache
 C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\VSCode\Csharp\DotNetWpf\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\VSCode\Csharp\DotNetWpf\obj\Debug\net5.0-windows\test.csproj.CopyComplete

@@ -9,7 +9,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="300">
+        Title="Изучаю си #" Width="600" Height="500" >
 
     <Window.Resources>
         <col:ArrayList x:Key="days">
@@ -23,23 +23,41 @@
         </col:ArrayList> 
     </Window.Resources>
 
-    <Grid x:Name="layoutGrid">
+    <Grid x:Name="layoutGrid" ShowGridLines="True">
 
-        <StackPanel x:Name="stackPanel" Orientation="Vertical">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-            <TextBox x:Name="textBox1" Width="150" Height="30" Margin="5" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" VerticalAlignment="Top"/>
+        <Button Grid.Column="0" Grid.Row="0" Content="Строка 0 Столбец 0"  />
+        <Button Grid.Column="0" Grid.Row="1" Content="Объединение трех столбцов" Grid.ColumnSpan="3"  />
+        <Button Grid.Column="2" Grid.Row="2" Content="Строка 2 Столбец 2"  />
 
-            <TextBlock x:Name="textBlock1" Width="150" Height="30" Margin="5" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" x:Name="stackPanel" Orientation="Vertical">
 
-            <Button x:Name="button1" Width="100" Height="30" Margin="5" Opacity="0.5" Content="Кнопка" Background="Red" Click="ButtonClick" />
-
-            <Button x:Name="phoneButton" Width="250" Height="40" Margin="5" HorizontalAlignment="Center">
-                <Button.Content>
-                    <local:Phone Name="Lumia 950" Price="700" />
-                </Button.Content>
-            </Button>
+            <TextBox x:Name="textBox1" Width="150" Height="30" Margin="10" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWayToSource}" VerticalAlignment="Top"/>
+            <Button x:Name="button1" Width="100" Height="30" Opacity="0.7" Content="Кнопка" Background="Red" Click="ButtonClick" />
 
         </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="0" x:Name="stackPanelForAddButton" Orientation="Vertical">
+
+            <TextBlock x:Name="textBlock1" Width="150" Height="30" Margin="10" Text="{Binding Path=SynchronizedText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>
+
+        </StackPanel>
+
+        <Button Grid.Column="0" Grid.Row="2" x:Name="phoneButton" Width="175" Height="40" Margin="5" HorizontalAlignment="Center">
+            <Button.Content>
+                <local:Phone Name="Lumia 950" Price="700" />
+            </Button.Content>
+        </Button>
 
     </Grid>
     

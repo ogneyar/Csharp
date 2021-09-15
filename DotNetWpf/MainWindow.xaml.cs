@@ -33,9 +33,11 @@ namespace test
             myButton.Content = "Тест";
             // myButton.Margin = 10;
             // myButton.Click = ButtonClick();
+            // myButton.Click =  MessageBox.Show("Необходимо ввести текст!");
+            // myButton.ClickMode = "Press";
             myButton.Background = new SolidColorBrush(Colors.Green);
 
-            stackPanel.Children.Add(myButton);
+            stackPanelForAddButton.Children.Add(myButton);
         }
 
         private void ButtonClick(object sender, RoutedEventArgs e)
@@ -60,7 +62,7 @@ namespace test
         
         public override string ToString()
         {
-            return $"Смартфон {this.Name} цена: {this.Price}";
+            return $"Смарт {this.Name} цена: {this.Price}";
         }
     }
 
