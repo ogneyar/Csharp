@@ -1,0 +1,16 @@
+dotnet --help // помощь по командам
+
+
+dotnet new console // создание консольного приложения
+
+dotnet new mvc // создание web приложения с model view controller
+dotnet new web // создание пустого web приложения
+dotnet new angular // создание web приложения (.NET с angular)
+dotnet new react // создание web приложения (.NET с react)
+dotnet new webapi // создание web приложения для api
+
+dotnet new winforms // создание windows приложения
+dotnet new wpf // создание windows приложения (Windows Presentation Foundation)
+
+
+dotnet run // запуск приложения
