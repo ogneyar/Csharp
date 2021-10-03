@@ -3,8 +3,9 @@ dotnet --help // помощь по командам
 
 dotnet new console // создание консольного приложения
 
-dotnet new mvc // создание web приложения с model view controller
-dotnet new web // создание пустого web приложения
+dotnet new web -o DotNetWeb // создание пустого web приложения в папке DotNetWeb
+dotnet new webapp -o DotNetWebApp // создание ASP.NET web приложения в папке DotNetWebApp
+dotnet new mvc -o DotNetMvc // создание ASP.NET web приложения с model view controller в папке DotNetMvc
 dotnet new angular // создание web приложения (.NET с angular)
 dotnet new react // создание web приложения (.NET с react)
 dotnet new webapi // создание web приложения для api
@@ -14,3 +15,4 @@ dotnet new wpf // создание windows приложения (Windows Present
 
 
 dotnet run // запуск приложения
+dotnet watch run // запуск приложения с отслеживанием изменений
