@@ -1,4 +1,5 @@
 using System; // import System namespace
+using System.Windows.Forms; 
 
 namespace MyNamespace
 {
@@ -9,6 +10,7 @@ namespace MyNamespace
             Console.WriteLine("Hello World!");
             Console.Write("Press enter to exit...");
             Console.ReadLine();
+            MessageBox.Show("Как дела?");
         }
     }
 }
